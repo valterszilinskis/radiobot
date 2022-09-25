@@ -23,8 +23,14 @@ class MusicPlayer {
             this.settings.loop = false;
 
     }
-    #addToQueue(){
 
+    /**
+     * Query youtube api and add a song to the queue to play.
+     *
+     * @param query string |
+     *  Keywords that are searched in Youtube API
+     */
+    #addToQueue(query){
     }
     play(){
 
