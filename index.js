@@ -1,6 +1,8 @@
 const YouTube = require('youtube-node');
+
+
 const youtube = new YouTube();
-youtube.setKey("AIzaSyDWDmfyJ7uXWbdi7bceWrPJN-yDVLNEWW0");
+youtube.setKey(process.env.YoutubeAPI);
 
 youtube.search('RadioHead - creep', 10, function(err, result){
     if(err){
